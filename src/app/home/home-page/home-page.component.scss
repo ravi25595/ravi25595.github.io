@@ -1,0 +1,95 @@
+.body {
+    background-color: #00072D;
+    color: #fff;
+
+    a {
+        color: #fff;
+    }
+}
+
+header {
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+
+    p {
+        cursor: pointer;
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    [logo-name] {
+        font-family: 'Agustina';
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            margin: 0;
+
+            a {
+                text-decoration: none;
+                font-size: 1.5rem;
+                font-weight: 700;
+                padding: .6rem 1rem;
+            }
+
+            dl {
+                align-items: center;
+                display: flex;
+
+                .active {
+                    color: aquamarine;
+                }
+            }
+        }
+    }
+}
+
+section {
+    width: clamp(100px, 100%, 1400px);
+    margin: auto;
+}
+
+.greeting-main {
+    display: flex;
+    align-items: center;
+
+    .greeting-image,
+    .greeting-text {
+        width: 50%;
+    }
+
+    svg {
+        path {
+            transition: fill 1s ease-in;
+        }
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        p {
+            font-size: 1rem;
+        }
+
+        ul li a {
+            font-size: 0.8rem;
+            padding: 5px 10px;
+        }
+    }
+}
